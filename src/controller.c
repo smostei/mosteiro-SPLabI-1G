@@ -105,21 +105,17 @@ LinkedList* getListaTiemposActualizados(LinkedList* listaOriginal) {
 	return listaMapeada;
 }
 
-int ordenarBicicletaPorTipo(void* bici1, void* bici2) {
+int ordenarBicicletaPorTiempo(void* bici1, void* bici2) {
 	Bicicleta* primerBici = (Bicicleta*) bici1;
 	Bicicleta* segundaBici = (Bicicleta*) bici2;
 
 	int retorno = 0;
 
-	if(strcmp(primerBici->tipo, segundaBici->tipo) > 0) {
-		if(strcmp(primerBici->tipo, segundaBici->tipo) == 0) {
-			if(primerBici->tiempo > primerBici->tiempo) {
-				retorno = 1;
-			}
-		}
+	if(primerBici->tiempo < segundaBici->tiempo) {
+		retorno = 1;
 	}
 
-	if(strcmp(primerBici->tipo, segundaBici->tipo) < 0) {
+	if(primerBici->tiempo > segundaBici->tiempo) {
 		retorno = -1;
 	}
 

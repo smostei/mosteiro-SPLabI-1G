@@ -66,13 +66,13 @@ int main() {
 				break;
 			case 5:
 				if(listaMapeada != NULL) {
-					ll_sort(listaMapeada, ordenarBicicletaPorTipo, 0);
+					ll_sort(listaMapeada, ordenarBicicletaPorTiempo, 0);
 					mostrarBicicletas(listaMapeada);
-					printf("\n\nSe han ordenado las bicicletas por tipo!\n\n");
+					printf("\n\nSe han ordenado las bicicletas por tiempo ascendente!\n\n");
 				} else if(listaBicicletas != NULL) {
-					ll_sort(listaBicicletas, ordenarBicicletaPorTipo, 0);
+					ll_sort(listaBicicletas, ordenarBicicletaPorTiempo, 0);
 					mostrarBicicletas(listaMapeada);
-					printf("\n\nSe han ordenado las bicicletas por tipo!\n\n");
+					printf("\n\nSe han ordenado las bicicletas por tiempo ascendente!\n\n");
 				} else {
 					printf("Hubo un error al intentar ordenar las bicicletas\n\n");
 				}

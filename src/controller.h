@@ -52,7 +52,7 @@ LinkedList* getListaTiemposActualizados(LinkedList* listaOriginal);
  *
  * @return SUCCESS 0 ERROR 1
  */
-int ordenarBicicletaPorTipo(void* bici1, void* bici2);
+int ordenarBicicletaPorTiempo(void* bici1, void* bici2);
 
 /** @brief funcion que sabe filtrar bicicletas por tipo BMX para pasarsela al filter
  *

@@ -9,7 +9,7 @@ int menuPrincipal() {
 	printf("2) Mostrar lista de bicicletas\n");
 	printf("3) Asignar tiempos\n");
 	printf("4) Crear archivo nuevo filtrando las bicicletas del tipo seleccionado\n");
-	printf("5) Mostrar posiciones\n");
+	printf("5) Mostrar posiciones ordenadas por tiempo ASC\n");
 	printf("6) Guardar posiciones\n");
 	printf("7) Salir\n\n");
 
